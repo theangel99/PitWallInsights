@@ -225,9 +225,9 @@
 	var slider = new Swiper('.main-slider', {
 		slidesPerView: 1,
 		spaceBetween: 0,
-		loop: true,
+		loop: false, //spremeni na true če želiš slide
 		autoplay: {
-			enabled: true,
+			enabled: true, 
 			delay: 6000
 		},
 		// Navigation arrows
