@@ -3876,6 +3876,7 @@
 .slider-three_image img{
 	position:relative;
 	display:inline-block;
+	border-radius: 25px;
 }
 
 .slider-three_content{

@@ -275,7 +275,7 @@
 		loop: true,
 		//centeredSlides: true,
 		autoplay: {
-			enabled: true,
+			enabled: false,
 			delay: 6000
 		},
 		// Navigation arrows

@@ -29,6 +29,7 @@
 }
 .swiper-container-vertical > .swiper-wrapper {
     flex-direction: column
+    
 }
 .swiper-wrapper {
     position: relative;
