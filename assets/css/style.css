@@ -3411,7 +3411,7 @@
 .news-two{
 	position: relative;
 	padding:100px 0px 100px;
-	background-color:var(--color-two);
+	background-color:var(--color-four);
 }
 
 .news-two .three-items_slider-pagination{
@@ -3628,12 +3628,12 @@
 /* Style Two */
 
 .contact-one.style-two .contact-one_form-outer{
-	border-color:var(--color-three);
-	background-color:var(--color-three);
+	border-color:var(--color-five);
+	background-color:var(--color-seven);
 }
 
 .contact-one.style-two .contact-one_form-outer .contact-one_form-title{
-	color:var(--color-two);
+	color:var(--color-seven);
 }
 
 .contact-one.style-two{
@@ -4125,8 +4125,9 @@
 
 .about-two{
 	position: relative;
-	padding: 100px 0px 70px;
+	padding: 30px 0px 15px;
 }
+
 
 .about-two_image-column{
 	position: relative;
@@ -5921,6 +5922,10 @@
 
 ***/
 
+.post-top-title {
+	padding:90px 0px 90px;
+}
+
 .blog-detail{
 	position: relative;
 }
@@ -7295,4 +7300,34 @@
 
 .error-one .button-box{
 	margin-top:30px;
+}
+
+.next_race {
+	background-color:var(--color-two);
+	
+}
+
+.race_location {
+	margin: 20px 0px 20px 0px;
+}
+
+.race_location h3 {
+	font-family: "Roboto Condensed", sans-serif;
+	color: white;
+}
+
+.race_location p {
+	font-family: "Roboto Condensed", sans-serif;
+	color: white;
+}
+
+.race-date  {
+	background-color: rgba(226, 218, 218, 0.18);
+	padding: 2px 10px 2px 10px;
+	width: 28%;
+	border-radius: 25px;
+}
+
+.contact-bg {
+	background-color:var(--color-two);
 }
