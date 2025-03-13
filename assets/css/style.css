@@ -7324,10 +7324,23 @@
 .race-date  {
 	background-color: rgba(226, 218, 218, 0.18);
 	padding: 2px 10px 2px 10px;
-	width: 28%;
+	width: 52%;
 	border-radius: 25px;
 }
 
 .contact-bg {
 	background-color:var(--color-two);
+}
+
+.blog-event {
+	font-size: 1.5rem;
+	font-family: "Roboto Condensed", sans-serif;
+	margin: 0;
+}
+
+.blog-event-t {
+	margin: 0;
+}
+.blog-detail p {
+	text-align: justify;
 }

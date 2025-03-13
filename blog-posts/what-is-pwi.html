@@ -27,8 +27,8 @@
 <body>
 
 <div class="page-wrapper">
-	
-	
+
+	<?php include '../header.html'; ?>
 	<!-- Page Title -->
     <section class="page-title post-top-title" >
         <div class="auto-container">
@@ -116,118 +116,12 @@
 					</div>
 				</div>
 				
-				<!-- Sidebar Side -->
-                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
-                	<aside class="sidebar">
-						<div class="sidebar-inner">
-							
-							<!-- Search Widget -->
-							<div class="sidebar-widget search-box">
-								<div class="widget-content">
-									<h5 class="sidebar-widget_title">Search Here</h5>
-									<form method="post" action="contact.html">
-										<div class="form-group">
-											<input type="search" name="search-field" value="" placeholder="Search..." required>
-											<button type="submit"><span class="icon fa fa-search"></span></button>
-										</div>
-									</form>
-								</div>
-							</div>
-
-							<!-- Post Widget -->
-							<div class="sidebar-widget post-widget">
-								<div class="widget-content">
-									<h5 class="sidebar-widget_title">Popular Post</h5>
-
-									<div class="post">
-										<div class="thumb"><a href="blog-detail.html"><img src="assets/images/resource/post-thumb-4.jpg" alt=""></a></div>
-										<h6><a href="blog-detail.html">Biking Through History Exploring Ancient Trails Landmarks</a></h6>
-										<div class="post-date"><i class="fa-regular fa-calendar fa-fw"></i> Mar 18, 2028</div>
-									</div>
-
-									<div class="post">
-										<div class="thumb"><a href="blog-detail.html"><img src="assets/images/resource/post-thumb-5.jpg" alt=""></a></div>
-										<h6><a href="blog-detail.html">Riding in Style Fashion Tips for the Fashionable Biker</a></h6>
-										<div class="post-date"><i class="fa-regular fa-calendar fa-fw"></i> Mar 18, 2028</div>
-									</div>
-
-									<div class="post">
-										<div class="thumb"><a href="blog-detail.html"><img src="assets/images/resource/post-thumb-6.jpg" alt=""></a></div>
-										<h6><a href="blog-detail.html">The Zen of Cycling Finding Peace and Serenity on the Bike</a></h6>
-										<div class="post-date"><i class="fa-regular fa-calendar fa-fw"></i> Mar 18, 2028</div>
-									</div>
-
-								</div>
-							</div>
-
-							<!-- Service Widget -->
-							<div class="sidebar-widget category-widget">
-								<div class="widget-content">
-									<h5 class="sidebar-widget_title">Categories</h5>
-									<ul class="service-list">
-										<li><a href="#">Gear <span>(03)</span></a></li>
-										<li><a href="#">Training <span>(04)</span></a></li>
-										<li><a href="#">Destinations <span>(02)</span></a></li>
-										<li><a href="#">Events <span>(05)</span></a></li>
-										<li><a href="#">Inspiration <span>(02)</span></a></li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- Popular Tags -->
-							<div class="sidebar-widget popular-tags">
-								<div class="widget-content">
-									<h5 class="sidebar-widget_title">Popular Tags</h5>
-									<a href="#">Biking</a>
-									<a href="#">Travel</a>
-									<a href="#">Maintenance</a>
-									<a href="#">Fitness</a>
-									<a href="#">Events</a>
-								</div>
-							</div>
-							
-						</div>
-					</aside>
-				</div>
 				
-			</div>
-		</div>
-	</div>
-	<!-- End Sidebar Page Container -->
-	
-	<!-- Newsletter One -->
-	<section class="newsletter-one">
-		<div class="auto-container">
-			<div class="inner-container">
-				<div class="newsletter-one_pattern" style="background-image: url(assets/images/background/pattern-3.png)"></div>
-				<div class="row clearfix">
-					<!-- Column -->
-					<div class="column col-lg-6 col-md-12 col-sm-12">
-						<h2 class="newsletter-one_heading">Subscribe To My Newsletter for latest Updates</h2>
-					</div>
-					<!-- Column -->
-					<div class="column col-lg-6 col-md-12 col-sm-12">
-						<div class="newsletter-box">
-							<form method="post" action="contact.html">
-								<div class="form-group">
-									<span class="icon flaticon-mail"></span>
-									<input type="email" name="search-field" value="" placeholder="Your Email" required>
-									<button type="submit" class="theme-btn submit-btn">
-										Subscribe Now <i class="flaticon-bell"></i>
-									</button>
-								</div>
-							</form>
-						</div>
-						<div class="newsletter-one_span">*We Never Span</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Newsletter One -->
+				<?php include '../blog-sidebar.html'; ?>
+
 	
 	
-	
+	<?php include '../footer.html'; ?>	
 	
 </div>
 <!-- End PageWrapper -->
