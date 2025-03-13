@@ -370,7 +370,7 @@
 		loop: true,
 		//centeredSlides: true,
 		autoplay: {
-			enabled: false,
+			enabled: true,
 			delay: 6000
 		},
 		// Navigation arrows
