@@ -7304,6 +7304,7 @@
 
 .next_race {
 	background-color:var(--color-two);
+	padding: 50px 0px 50px 0px;
 	
 }
 
@@ -7324,7 +7325,7 @@
 .race-date  {
 	background-color: rgba(226, 218, 218, 0.18);
 	padding: 2px 10px 2px 10px;
-	width: 52%;
+	width: 42%;
 	border-radius: 25px;
 }
 
@@ -7343,4 +7344,25 @@
 }
 .blog-detail p {
 	text-align: justify;
+}
+
+.race-home-schedule {
+	border-radius: 15px;
+	box-shadow: 1px 0px 3px 1px white;
+	margin: 20px 0px 0px 0px ;
+}
+
+.race-home-schedule li {
+	color: white;
+	font-family:"Roboto Condensed", sans-serif ;
+	font-weight: 500;
+	font-size: 1.3rem;
+}
+
+.race-home-schedule ul {
+	padding: 15px;
+}
+
+.race-home-schedule span {
+	color: var(--main-color);
 }
