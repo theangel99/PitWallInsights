@@ -465,7 +465,7 @@
 	border-radius: 0px;
 	display: inline-block;
 	color:var(--color-three);
-	text-transform:capitalize;
+	
 	background-color:var(--color-two);
 	border:1px solid rgba(var(--white-color-rgb), 0.10);
 }
@@ -620,7 +620,7 @@
 	position:relative;
 	font-size:14px;
 	font-weight:400;
-	text-transform:capitalize;
+	
 	color:rgba(var(--color-three-rgb), 0.50);
 }
 
@@ -1698,7 +1698,7 @@
 	font-weight:500;
 	font-size:16px;
 	color:var(--white-color);
-	text-transform:capitalize;
+	
 	transform: translateX(-50%) translateY(-50%);
 	font-family: "Roboto Condensed", sans-serif;
 }
@@ -2305,6 +2305,7 @@
 .newsletter-one{
 	position:relative;
 	z-index:1;
+	background-color: var(--color-two);
 }
 
 .newsletter-one .inner-container{
@@ -2820,7 +2821,8 @@
 
 .community-one{
 	position: relative;
-	padding: 0px 0px 100px;
+	padding: 100px 0px 100px;
+	background-color: var(--color-four);
 }
 
 .community-one_image-column{
@@ -3271,7 +3273,7 @@
 	font-weight:500;
 	font-size:16px;
 	color:var(--white-color);
-	text-transform:capitalize;
+	
 	border-bottom:1px solid var(--main-color);
 	font-family: "Roboto Condensed", sans-serif;
 }
@@ -3660,7 +3662,7 @@
 	position:relative;
 	margin-bottom:25px;
 	color:var(--color-three);
-	text-transform:capitalize;
+	
 }
 
 /*** 
@@ -3921,7 +3923,6 @@
 .slider-three_heading{
 	margin-bottom:20px;
 	color: var(--color-three);
-	text-transform: capitalize;
 	transition:all 900ms ease;
 	-moz-transition:all 900ms ease;
 	-webkit-transition:all 900ms ease;
@@ -3946,7 +3947,6 @@
 	line-height:30px;
 	opacity:0.80;
 	color: var(--color-three);
-	text-transform: capitalize;
 	margin-bottom:30px;
 
 	transition:all 900ms ease;
@@ -4967,7 +4967,7 @@
 	float:left;
 	color: transparent;
     -webkit-text-stroke-width: 2px;
-	text-transform:capitalize;
+	
     -webkit-text-stroke-color: rgba(var(--color-three-rgb), 0.90);
 	font-family: "Roboto Condensed", sans-serif;
 }
@@ -5009,7 +5009,7 @@
 
 .page-title h2{
 	z-index: 1;
-	text-transform:capitalize;
+	
 	color:var(--color-three);
 }
 
@@ -5025,7 +5025,7 @@
 	display:inline-block;
 	font-size: 16px;
 	color:var(--main-color);
-	text-transform:capitalize;
+	
 	margin-right: 15px;
 	padding-right: 15px;
 }
@@ -5512,7 +5512,7 @@
 	text-align:center;
 	font-size:16px;
 	color:var(--white-color);
-	text-transform:capitalize;
+	
 	transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
@@ -5710,7 +5710,7 @@
 	font-size: 14px;
 	margin-top: 8px;
 	color:var(--color-three);
-	text-transform:capitalize;
+	
 }
 
 .post-widget .post .post-date i{
@@ -5842,7 +5842,7 @@
 	line-height: 1em;
 	margin-bottom:15px;
 	color: var(--main-color);
-	text-transform:capitalize;
+	
 	display:inline-block;
 	transition:all 900ms ease;
 	-moz-transition:all 900ms ease;
@@ -5958,7 +5958,7 @@
 	line-height: 1em;
 	margin-bottom:15px;
 	color: var(--main-color);
-	text-transform:capitalize;
+	
 	display:inline-block;
 	transition:all 900ms ease;
 	-moz-transition:all 900ms ease;
@@ -6309,7 +6309,7 @@
 	position: relative;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	padding: 30px 30px 25px;
+	padding: 10px 30px 30px ;
 	border: 1px solid rgba(var(--color-three-rgb), 0.15);
 }
 
@@ -7365,4 +7365,32 @@
 
 .race-home-schedule span {
 	color: var(--main-color);
+}
+
+.race-home-schedule-date {
+	color: green;
+}
+
+.home-standing  {
+	font-size: 1.3rem;
+}
+
+.standing-btn {
+	position:relative;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:500;
+	line-height:30px;
+	padding: 2px 20px 2px 20px;
+	color: var(--main-colore);
+	font-family: "Roboto Condensed", sans-serif;
+	margin: 5px 0px 15px 0px;
+}
+
+.standing-btn a:hover {
+	color: black;
+}
+
+.standing-btn:hover {
+
 }
