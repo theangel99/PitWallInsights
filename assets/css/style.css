@@ -5781,6 +5781,8 @@
 .news-block_three{
 	position:relative;
 	margin-bottom:30px;
+	width: 70%;
+	margin: 0px auto 30px auto;
 }
 
 .news-block_three-inner{
@@ -5797,7 +5799,6 @@
 	position:relative;
 	width:100%;
 	display:block;
-	filter: grayscale(100%);
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
@@ -7401,4 +7402,18 @@
 	margin: 0;
 	font-weight: 600;
 	color: var(--main-color);
+}
+.news-block_three-text {
+	font-family: "Roboto Condensed", sans-serif;
+	margin-top: 0px;
+}
+.gp-name  {
+	margin-bottom: 0px;
+}
+.gp-date {
+	font-size: 1.6rem;
+	font-family: "Roboto Condensed", sans-serif;
+	margin: 0;
+	font-weight: 600;
+	color: var(--main-color);	
 }
