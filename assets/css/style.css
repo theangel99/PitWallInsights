@@ -2822,7 +2822,7 @@
 .community-one{
 	position: relative;
 	padding: 100px 0px 100px;
-	background-color: var(--color-four);
+	background-color: var(--black-color);
 }
 
 .community-one_image-column{
@@ -2846,7 +2846,7 @@
 	width:170px;
 	height:330px;
 	z-index:1;
-	background-color: var(--color-four);
+	background-color: var(--black-color);
 }
 
 .community-one_image img{
@@ -2876,6 +2876,7 @@
 	margin-left:180px;
 	margin-top:55px;
 	color:var(--color-three);
+	text-align: justify;
 }
 
 .community-one_button{
@@ -7326,7 +7327,7 @@
 .race-date  {
 	background-color: rgba(226, 218, 218, 0.18);
 	padding: 2px 10px 2px 10px;
-	width: 42%;
+	width: 52%;
 	border-radius: 25px;
 }
 
