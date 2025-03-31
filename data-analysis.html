@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hamilton Throttle & Brake – Japan GP</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    canvas { max-width: 80%; height: auto; }
+  </style>
+</head>
+<body>
+  <h2>Lewis Hamilton – Throttle & Brake (Japan GP 2023 – Race)</h2>
+  <canvas id="telemetryChart"></canvas>
+
+  <script>
+    async function fetchTelemetry() {
+      const sessionKey = 9158; // Suzuka 2023 race
+      const driverNumber = 1; // Hamilton
+      const res = await fetch(`https://api.openf1.org/v1/car_data?session_key=${sessionKey}&driver_number=${driverNumber}`);
+      const rawData = await res.json();
+
+      // Limit data to 300 points for better performance
+      const data = rawData.slice(0, 300);
+
+      const labels = data.map(d => new Date(d.utc).toLocaleTimeString());
+      const throttle = data.map(d => d.throttle * 100);
+      const brake = data.map(d => d.brake * 100);
+
+      const chartData = {
+        labels,
+        datasets: [
+          {
+            label: 'Throttle (%)',
+            data: throttle,
+            borderColor: 'green',
+            fill: false,
+            tension: 0.2
+          },
+          {
+            label: 'Brake (%)',
+            data: brake,
+            borderColor: 'red',
+            fill: false,
+            tension: 0.2
+          }
+        ]
+      };
+
+      const ctx = document.getElementById('telemetryChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: chartData,
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              title: { display: true, text: '%' }
+            },
+            x: {
+              display: false // Too many timestamps to show nicely
+            }
+          }
+        }
+      });
+    }
+
+    fetchTelemetry();
+  </script>
+</body>
+</html>
