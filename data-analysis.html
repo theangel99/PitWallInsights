@@ -1,74 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hamilton Throttle & Brake – Japan GP</title>
+  <meta charset="UTF-8">
+  <title>Throttle/Brake Visualizer</title>
+  <!-- Stylesheets -->
+<link href="/assets/css/bootstrap.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+<link href="/assets/css/meanmenu.min.css" rel="stylesheet">
+<link href="/assets/css/responsive.css" rel="stylesheet">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<link rel="alternate" hreflang="sl" href="https://pitwall-insights.com" />
+<link rel="alternate" hreflang="en" href="https://pitwall-insights.com/en/" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    body { font-family: Arial; margin: 20px; }
-    canvas { max-width: 80%; height: auto; }
-  </style>
 </head>
+<style>
+
+.container {
+  width: 80%;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+</style>
 <body>
-  <h2>Lewis Hamilton – Throttle & Brake (Japan GP 2023 – Race)</h2>
-  <canvas id="telemetryChart"></canvas>
-
-  <script>
-    async function fetchTelemetry() {
-      const sessionKey = 9158; // Suzuka 2023 race
-      const driverNumber = 1; // Hamilton
-      const res = await fetch(`https://api.openf1.org/v1/car_data?session_key=${sessionKey}&driver_number=${driverNumber}`);
-      const rawData = await res.json();
-
-      // Limit data to 300 points for better performance
-      const data = rawData.slice(0, 300);
-
-      const labels = data.map(d => new Date(d.utc).toLocaleTimeString());
-      const throttle = data.map(d => d.throttle * 100);
-      const brake = data.map(d => d.brake * 100);
-
-      const chartData = {
-        labels,
-        datasets: [
-          {
-            label: 'Throttle (%)',
-            data: throttle,
-            borderColor: 'green',
-            fill: false,
-            tension: 0.2
-          },
-          {
-            label: 'Brake (%)',
-            data: brake,
-            borderColor: 'red',
-            fill: false,
-            tension: 0.2
-          }
-        ]
-      };
-
-      const ctx = document.getElementById('telemetryChart').getContext('2d');
-      new Chart(ctx, {
-        type: 'line',
-        data: chartData,
-        options: {
-          responsive: true,
-          scales: {
-            y: {
-              beginAtZero: true,
-              max: 100,
-              title: { display: true, text: '%' }
-            },
-            x: {
-              display: false // Too many timestamps to show nicely
-            }
-          }
-        }
-      });
-    }
-
-    fetchTelemetry();
-  </script>
+  <?php include 'base-elements/header.html'; ?>	
+  <div class="container">
+    <h1>Telemetry Visualizer for Lewis Hamilton - Australia GP Race</h1>
+    <canvas id="telemetryChart"></canvas>
+  </div>
+  <?php include 'base-elements/footer.html'; ?>
+  <script src="telemetry.js"></script>
 </body>
 </html>
