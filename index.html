@@ -1,604 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="sl">
 <head>
-<meta charset="utf-8">
-<title>Pit Wall Insights</title>
-
-<!-- Stylesheets -->
-<link href="/assets/css/bootstrap.css" rel="stylesheet">
-<link href="/assets/css/style.css" rel="stylesheet">
-<link href="/assets/css/meanmenu.min.css" rel="stylesheet">
-<link href="/assets/css/responsive.css" rel="stylesheet">
-
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-<link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
-
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-<link rel="alternate" hreflang="sl" href="https://pitwall-insights.com" />
-<link rel="alternate" hreflang="en" href="https://pitwall-insights.com/en/" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PitWall - Slovenska Formula 1 Stran</title>
+    <meta name="description" content="Slovenija prva destinacija za Formula 1 novice, rezultate, statistiko in analize. Spremljajte vse dirke, uvrstitve in novice iz sveta F1.">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><span>PitWall</span> Insights</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Domov</a></li>
+                <li><a href="articles.html">Novice</a></li>
+                <li><a href="races.html">Dirke</a></li>
+                <li><a href="standings.html">Lestvice</a></li>
+               <!-- <li><button class="lang-toggle">SLO / ENG</button></li> -->
+            </ul>
+        </nav>
+    </header>
 
-<div class="page-wrapper">
-		
-	<?php include 'base-elements/header.html'; ?>	
-	<!-- Slider Three -->
-	<section class="slider-three">
-		<div class="slider-three_icons" style="background-image:url(/assets/images/main-slider/icons.png)"></div>
-		<div class="slider-three_icon-two" style="background-image:url(/assets/images/main-slider/icon-1.png)"></div>
-		<div class="slider-three_pattern" style="background-image:url(/assets/images/main-slider/pattern-3.png)"></div>
-		<div class="main-slider swiper-container">
-			<div class="swiper-wrapper">
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-tagline">Statistika • Strategija • Hitrost</div>
+            <h1>F1 SLOVENIJA</h1>
+            <p>Vaša prva destinacija za vse novice, rezultate, analize in statistike iz sveta Formula 1. Spremljajte vsako dirko in bodite del skupnosti.</p>
 
-				<!-- Slide -->
-				<div class="swiper-slide">
-					<div class="auto-container">
-						<div class="row clearfix">
-						
-							<!-- Image Column -->
-							<div class="slider-three_image-column col-lg-5 col-md-12 col-sm-12">
-								<div class="slider-three_image">
-									<img src="/assets/images/main-banner/banner_01.png" alt="" />									
-								</div>
-							</div>
-							
-							<!-- Content Column -->
-							<div class="slider-three_content col-lg-5 col-md-12 col-sm-12">
-								<div class="slider-three_content-inner">
-									<div class="slider-three_title"><i><img src="/assets/images/main-slider/grid.svg" alt="" /></i> Statistika. Strategija. Posel.</div>
-									<h1 class="slider-three_heading">Hitrost in številke – srce Formule 1</h1>
-									<div class="slider-three_text">Tvoja stran za pregled statistike, poglobljene analize dirk Formule 1 ter poslovne in strateške vpoglede. Od časov krogov do financ ekip – analiziramo številke, ki oblikujejo ta šport.</div>
-									<div class="slider-three_button">
-										<a href="/newsletter-form" class="theme-btn btn-style-one">
-											<span class="btn-wrap">
-												<span class="text-one">Spremljaj novice <i class="flaticon-arrow-2"></i></span>
-												<span class="text-two">Spremljaj novice <i class="flaticon-arrow-2"></i></span>
-											</span>
-										</a>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-value">24</span>
+                    <span class="stat-label">Dirk v sezoni</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">20</span>
+                    <span class="stat-label">Dirkačev</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">10</span>
+                    <span class="stat-label">Ekip</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				
-			
+    <div class="container">
+        <!-- Next Race Section -->
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Naslednja Dirka</h2>
+                    <p class="section-subtitle">Pripravite se na naslednjo VN</p>
+                </div>
+            </div>
+            <div class="race-preview-card next-race">
+                <div class="race-preview-header">
+                    <span class="race-status">Prihaja</span>
+                    <h3 class="race-preview-title">Velika nagrada Qatarja</h3>
+                    <p class="race-preview-location">Lusail International Circuit, Qatar</p>
+                </div>
+                <div class="race-preview-details">
+                    <div class="race-detail-item">
+                        <span class="detail-label">Datum</span>
+                        <span class="detail-value">30. November 2025</span>
+                    </div>
+                    <div class="race-detail-item">
+                        <span class="detail-label">Začetek</span>
+                        <span class="detail-value">17:00 CET</span>
+                    </div>
+                    <div class="race-detail-item">
+                        <span class="detail-label">Krogov</span>
+                        <span class="detail-value">57</span>
+                    </div>
+                    <div class="race-detail-item">
+                        <span class="detail-label">Dolžina proge</span>
+                        <span class="detail-value">5.419 km</span>
+                    </div>
+                </div>
+                <div class="race-preview-description">
+                    <p>Dirka, ki lahko odloči boj za naslov, ali pa ga dokončno začini. Oba McLarna in Max. Čaka nas napeta dirka na stezi, kjer so prehitevanja redka.</p>
+                </div>
+            </div>
+        </section>
 
-			</div>
-			
-		</div>
-	</section>
-	<!-- End Main Slider Section -->
-	
+        <!-- Previous Race Section -->
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Zadnja Dirka</h2>
+                    <p class="section-subtitle">Pregled rezultatov zadnje dirke</p>
+                </div>
+                <a href="races.html" class="section-link">Vsi rezultati →</a>
+            </div>
+            <div class="race-preview-card previous-race">
+                <div class="race-preview-header">
+                    <span class="race-status completed">Končano</span>
+                    <h3 class="race-preview-title">Velika nagrada Las Vegasa</h3>
+                    <p class="race-preview-location">Las Vegas Street Circuit, ZDA</p>
+                </div>
+                <div class="podium">
+                    <div class="podium-item position-2">
+                        <div class="podium-position">2</div>
+                        <div class="podium-driver">George Russell</div>
+                        <div class="podium-team">Mercedes</div>
+                    </div>
+                    <div class="podium-item position-1">
+                        <div class="podium-position">1</div>
+                        <div class="podium-driver">Max Verstappen</div>
+                        <div class="podium-team">Red Bull</div>
+                    </div>
+                    <div class="podium-item position-3">
+                        <div class="podium-position">3</div>
+                        <div class="podium-driver">Kimi Antonelli</div>
+                        <div class="podium-team">Mercedes</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Latest News Section -->
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Sveže Novice</h2>
+                    <p class="section-subtitle">Ostanite v stiku z najnovejšimi dogodki iz sveta F1</p>
+                </div>
+                <a href="articles.html" class="section-link">Vse novice →</a>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image">Slika novice</div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Naslov</span>
+                            <span class="news-date">26. Nov 2024</span>
+                        </div>
+                        <h3 class="news-title">Max Verstappen osvojil četrti zaporedni naslov prvaka</h3>
+                        <p class="news-excerpt">Nizozemski dirkač je v Las Vegasu potrdil svoj četrti zaporedni naslov svetovnega prvaka Formula 1. Verstappen je s tem postal eden najuspešnejših dirkačev v zgodovini.</p>
+                    </div>
+                </div>
 
-		<!-- About Two -->
-		<section  class="about-two next_race">
-			<div class="auto-container">
-				<div class="row clearfix">
-					
-					<!-- Content Column -->
-					<div class="about-two_content-column col-lg-4 col-md-4 col-sm-4">
-						<div class="">
-							<!-- Sec Title -->
-							<div class="sec-title">
-								<div class="sec-title_title"><i><img src="/assets/images/main-slider/grid.svg" alt="" /></i> Naslednja dirka - Dirka 13</div>
-								<h4 class="sec-title_heading race-date">25-27 JUL</h4>
-								<div class="race_location">
-								<h3>Belgija</h3>
-								<p>FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2025</p>
-								</div>
-							</div>
-							<div class="about-two_image-column">
-							
-									<img src="/assets/images/circuits/belgium.png" alt="">
-	
-							</div>
-							
-							<div class="about-two_button">
-								<a href="https://www.formula1.com/en/racing/2025/belgium" class="theme-btn btn-style-one">
-									<span class="btn-wrap">
-										<span class="text-one">Odkrij več <i class="flaticon-arrow-2"></i></span>
-										<span class="text-two">Odkrij več <i class="flaticon-arrow-2"></i></span>
-									</span>
-								</a>
-							</div>
-							
-						</div>
-					</div>
+                <div class="news-card">
+                    <div class="news-image">Slika novice</div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Kvalifikacije</span>
+                            <span class="news-date">25. Nov 2024</span>
+                        </div>
+                        <h3 class="news-title">Ferrari z odličnim kvalifikacijskim rezultatom v Las Vegasu</h3>
+                        <p class="news-excerpt">Charles Leclerc je v kvalifikacijah dosegel najboljši čas in si priboril pole position. Ferrari pokazal odlično formo pred dirko.</p>
+                    </div>
+                </div>
 
+                <div class="news-card">
+                    <div class="news-image">Slika novice</div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Analiza</span>
+                            <span class="news-date">24. Nov 2024</span>
+                        </div>
+                        <h3 class="news-title">McLaren v boju za konstruktorski naslov</h3>
+                        <p class="news-excerpt">McLaren ostaja v igri za konstruktorski naslov. Ekipa je pokazala izjemno napredovanje in se bori z Ferrari ter Red Bullom.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
-					<div class="contact-one_map-column col-lg-8 col-md-8 col-sm-8">
-						
-						<div class="row clearfix">
-						
-							<div class="col-lg-8 col-md-8 col-sm-8">
-						<div class="contact-one_map-outer">
-							<div class="map-box" >
-				<img style="-webkit-box-shadow: -2px 2px 30px -16px rgba(255,255,255,1);
-								-moz-box-shadow: -2px 2px 30px -16px rgba(255,255,255,1);
-								box-shadow: -2px 2px 30px -16px rgba(255,255,255,1); border-radius: 9px;" src="/assets/images/race-imgs/belgium-race-img.avif"  alt="">
-							</div>
-						</div>
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Ostanite v Igri</h2>
+                    <p class="newsletter-description">Pridobite ekskluzivne analize, statistike in obvestila o dirkah direktno v vaš e-poštni nabiralnik. Pridružite se tisočim F1 navdušencem.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Vnesite vaš e-poštni naslov" required>
+                    <button type="submit" class="newsletter-button">Naroči se</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-						</div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">PIT<span>WALL</span></h3>
+                <p class="footer-description">Vaša prva slovenska destinacija za vse o Formula 1. Novice, rezultati, statistike in analize.</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-heading">Navigacija</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="articles.html">Novice</a></li>
+                    <li><a href="races.html">Dirke</a></li>
+                    <li><a href="standings.html">Lestvice</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-heading">Sledite nam</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter/X</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-heading">Pravno</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Pogoji uporabe</a></li>
+                    <li><a href="#">Politika zasebnosti</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PitWall by Veber digital - Slovenska Formula 1 Stran. Vse pravice pridržane.</p>
+            <p>Podatki so informativne narave. Za uradne rezultate obiščite FIA.com</p>
+        </div>
+    </footer>
 
-						<div class="col-md-4">
-							<div class="widget-content">
-								<h5 class="sidebar-widget_title">Spored</h5>
-
-											
-								
-								<div class="post">
-									<div class="sec-title_title blog-event">Belgija</div>
-									<h4 class="sec-title_heading">25-27 JUL</h4>
-									<p class="sec-title_text blog-event-t">FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2025</p>										
-								</div>
-
-								<div class="post">
-									<div class="sec-title_title blog-event">Madžarska</div>
-									<h4 class="sec-title_heading">01-03 AVG</h4>
-									<p class="sec-title_text blog-event-t">FORMULA 1 LENOVO HUNGARIAN GRAND PRIX 2025</p>										
-								</div>
-
-								<div class="post">
-									<div class="sec-title_title blog-event">Nizozemska</div>
-									<h4 class="sec-title_heading">29-31 AVG</h4>
-									<p class="sec-title_text blog-event-t">FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2025</p>										
-								</div>
-			
-
-							</div>
-							</div>
-
-							
-						</div>
-					</div>
-					
-					
-					
-				</div>
-			</div>
-		</section>
-		<!-- End About Two -->
-
-
-
-		<!-- About Two -->
-		<section style="display: none;"  class="next_race">
-			<div class="auto-container">
-				<div class="row clearfix">
-					
-					<!-- Content Column -->
-					<div class="col-lg-3 col-md-4 col-sm-4">
-						<div class="">
-							<!-- Sec Title -->
-							<div class="sec-title">
-								<div class="sec-title_title"><i><img src="/assets/images/main-slider/grid.svg" alt="" /></i> Dirkaški vikend Savdska Arabija</div>
-								<h4 class="sec-title_heading race-date">11-13 APR</h4>
-								<div class="race_location">
-								<h3>Bahrain</h3>
-								<p>FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2025</p>
-								</div>
-							</div>
-							<div class="about-two_image-column">
-							
-									<img src="/assets/images/circuits/bahrain.png" alt="">
-	
-							</div>
-							
-							<div style="display: none;" class="about-two_button">
-								<a href="https://www.formula1.com/en/racing/2025/bahrain" class="theme-btn btn-style-one">
-									<span class="btn-wrap">
-										<span class="text-one">Odkrij več <i class="flaticon-arrow-2"></i></span>
-										<span class="text-two">Odkrij več <i class="flaticon-arrow-2"></i></span>
-									</span>
-								</a>
-							</div>
-							
-						</div>
-					</div>
-
-
-					<div class="contact-one_map-column col-lg-3 col-md-8 col-sm-8">
-						
-						
-						
-							<div>
-						<div class="contact-one_map-outer">
-							<div class="map-box" >
-						<img style="-webkit-box-shadow: -2px 2px 30px -16px rgba(255,255,255,1);
-								-moz-box-shadow: -2px 2px 30px -16px rgba(255,255,255,1);
-								box-shadow: -2px 2px 30px -16px rgba(255,255,255,1); border-radius: 9px;" src="/assets/images/race-imgs/bahrain_race_img.png"  alt="">
-							</div>
-						</div>
-						</div>
-						<div class="race-home-schedule">
-							<ul>
-								<li><span>Trening 1</span>  <i style="padding-left: 15px;" class="fa fa-check-square"></i></li>
-								<li><span>Trening 2</span> <i style="padding-left: 15px;" class="fa fa-check-square"></i> </li>
-								<li><span>Trening 3</span> <i style="padding-left: 15px;" class="fa fa-check-square"></i></li>
-								<hr style="color:  white;">
-								<li><span>Kvalifikacije </span> <i style="padding-left: 15px;" class="fa fa-check-square"></i></li>
-								<li><span> Dirka </span> 13.4. - 17:00</li>
-							</ul>
-						</div>
-
-						
-
-					</div>
-					
-					<div class="col-lg-3">
-						<div class="widget-content">
-							<h5 class="sidebar-widget_title">Rezultati</h5>
-
-							<div class="post">
-								<div class="sec-title_title blog-event">Kvalifikacije</div>
-								<h4 class="sec-title_heading home-standing">1 PIA | 2 RUS | 3 LEC</h4>		
-								<button class="standing-btn"><a href="https://www.formula1.com/en/results/2025/races/1257/bahrain/qualifying">Več <i class="fa fa-arrow-right"></i></a></button>					
-							</div>
-
-							
-							
-
-						</div>
-					</div>
-
-
-						<div class="col-lg-2" style="align-content: center;">
-							
-							
-									<a href="https://www.formula1.com/en/racing/2025/bahrain" class="theme-btn btn-style-one">
-										<span class="btn-wrap">
-											<span class="text-one">Odkrij več <i class="flaticon-arrow-2"></i></span>
-											<span class="text-two">Odkrij več <i class="flaticon-arrow-2"></i></span>
-										</span>
-									</a>
-								
-	
-							</div>
-					
-				</div>
-			</div>
-		</section>
-		<!-- End About Two -->
-	
-	
-<!-- Community One -->
-<section class="community-one">
-	<div class="auto-container">
-		<div class="row clearfix">
-			
-			<!-- Image Column -->
-			<div class="community-one_image-column col-lg-7 col-md-12 col-sm-12">
-				<div class="community-one_image-outer">
-					<div class="community-one_image">
-						<img src="/assets/images/race-imgs/great-britain-img.jpg" alt="" />
-						
-					</div>
-				</div>
-			</div>
-			
-			<!-- Content Column -->
-			<div class="community-one_content-column col-lg-5 col-md-12 col-sm-12">
-				<div class="community-one_content-outer">
-					<!-- Sec Title -->
-					<div class="sec-title title-anim">
-						<div class="sec-title_title"><i><img src="assets/images/main-slider/grid.svg" alt="" /></i> Pregled zadnje dirke</div>
-			
-						<div class="race_location">
-							<h3>VN Velike Britanije</h3>
-							<p>FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2025</p>
-							<h4 class="sec-title_heading home-standing">1 NOR | 2 PIA | 3 HUL</h4>	
-							</div>
-					</div>
-					<div class="community-one_text">
-
-					</div>
-					<div class="community-one_button">
-						<a href="/dirke/great-britain" class="theme-btn btn-style-one">
-							<span class="btn-wrap">
-								<span class="text-one">Pregled dirke <i class="flaticon-arrow-2"></i></span>
-								<span class="text-two">Pregled dirke <i class="flaticon-arrow-2"></i></span>
-							</span>
-						</a>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-</section>
-<!-- End Community One -->
-
-
-		<!-- News Two -->
-		<section class="news-two">
-			<div class="auto-container">
-				<!-- Sec Title -->
-				<div class="sec-title centered">
-					<div class="sec-title_title"><i><img src="/assets/images/main-slider/grid.svg" alt="" /></i> Zadnje objave</div>
-					<h2 class="sec-title_heading">Sveže na Pit Wall-u</h2>
-				</div>
-				<div class="three-items_slider swiper-container">
-					<div class="swiper-wrapper">
-
-<!-- Slide 2 -->
-<div class="swiper-slide">
-<!-- Objava 10 -->
-<div class="news-block_two">
-	<div class="news-block_two-inner">
-		<div class="news-block_two-image">
-			<a href="/objave/dirka-pod-reflektorji-bahrain"><img src="/assets/images/blog-card-img/bahrain-nocna.png" alt="" /></a>
-		</div>
-		<div class="news-block_two-content">
-			<div class="news-block_two-date">11<span>apr</span></div>
-			<ul class="news-block_two-meta">
-				<li>Zanimivosti</li>
-			</ul>
-			<h4 class="news-block_two-title"><a href="/objave/dirka-pod-reflektorji-bahrain">Nočni spektakel v Bahrainu</a></h4>
-			<div class="news-block_two-text">Ena najbolj tehnično zahtevnih stez, saj združuje dolge ravnine, močna zaviranja in hitro spreminjajoče se pogoje. Nočna dirka prinaša poseben izziv, ki ga ekipe in dirkači ne smejo podcenjevati.</div>
-			<a class="news-block_two-more" href="/objave/dirka-pod-reflektorji-bahrain">Preberi več <i class="flaticon-next-1"></i></a>
-		</div>
-	</div>
-</div>
-</div>
-
-
-<!-- Slide 2 -->
-<div class="swiper-slide">
-		<!-- Objava 9 -->
-		<div class="news-block_two">
-			<div class="news-block_two-inner">
-				<div class="news-block_two-image">
-					<a href="/objave/steza-japonska"><img src="/assets/images/blog-card-img/suzuka-steza-card.png" alt="" /></a>
-				</div>
-				<div class="news-block_two-content">
-					<div class="news-block_two-date">31<span>mar</span></div>
-					<ul class="news-block_two-meta">
-						<li>novosti</li>
-					</ul>
-					<h4 class="news-block_two-title"><a href="/objave/steza-japonska">Japonska klasika: Zakaj je Suzuka tako posebna?</a></h4>
-					<div class="news-block_two-text">Po vikendu premora se F1 vrača na eno najbolj spoštovanih in kultnih prizorišč v koledarju - steza v Suzuki.</div>
-					<a class="news-block_two-more" href="/objave/steza-japonska">Preberi več <i class="flaticon-next-1"></i></a>
-				</div>
-			</div>
-		</div>
-</div>
-
-		<!-- Slide 2 -->
-		<div class="swiper-slide">
-			<!-- Objava 8 -->
-			<div class="news-block_two">
-				<div class="news-block_two-inner">
-					<div class="news-block_two-image">
-						<a href="/objave/mclaren-zmaga-posel"><img src="/assets/images/blog-card-img/mclaren-dirka-posel.png" alt="" /></a>
-					</div>
-					<div class="news-block_two-content">
-						<div class="news-block_two-date">28<span>mar</span></div>
-						<ul class="news-block_two-meta">
-							<li>analiza</li>
-						</ul>
-						<h4 class="news-block_two-title"><a href="/objave/mclaren-zmaga-posel">McLaren zmaguje – ne samo na stezi, tudi v poslu</a></h4>
-						<div class="news-block_two-text">ormula 1 že dolgo ni več zgolj boj za pokale in točke. Vsaka zmaga, vsak postanek v boksih in vsak milimeter prednosti na stezi nosi tudi svojo poslovno težo.</div>
-						<a class="news-block_two-more" href="/objave/mclaren-zmaga-posel">Preberi več <i class="flaticon-next-1"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-						<!-- Slide 2 -->
-		<div class="swiper-slide">
-						<!-- Objava 7 -->
-			<div class="news-block_two">
-				<div class="news-block_two-inner">
-					<div class="news-block_two-image">
-						<a href="/objave/redbull-menjava-dirkacev"><img src="/assets/images/blog-card-img/redbull-menjava-card.png" alt="" /></a>
-					</div>
-					<div class="news-block_two-content">
-						<div class="news-block_two-date">27<span>mar</span></div>
-						<ul class="news-block_two-meta">
-							<li>novosti</li>
-						</ul>
-						<h4 class="news-block_two-title"><a href="/objave/redbull-menjava-dirkacev">Red Bull menjava voznika že po dveh dirkah!</a></h4>
-						<div class="news-block_two-text">Red Bull Racing je po samo dveh odpeljanih dirkah v sezoni 2025 sprejel drastično odločitev – Tsunoda bo zamenjal Lawsona že na VN Japonske.</div>
-						<a class="news-block_two-more" href="/objave/redbull-menjava-dirkacev">Preberi več <i class="flaticon-next-1"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-						
-		
-				<!-- Slide 2 -->
-				<div class="swiper-slide">
-				<!-- Objava 6 -->
-				<div class="news-block_two">
-					<div class="news-block_two-inner">
-						<div class="news-block_two-image">
-							<a href="/objave/prehitevanja-kvalifikacije"><img src="/assets/images/blog-card-img/kvalifikacije-prehitevanja.png" alt="" /></a>
-						</div>
-						<div class="news-block_two-content">
-							<div class="news-block_two-date">19<span>mar</span></div>
-							<ul class="news-block_two-meta">
-								<li>Zanimivosti</li>
-							</ul>
-							<h4 class="news-block_two-title"><a href="/objave/prehitevanja-kvalifikacije">Kje v Formuli 1 odločajo kvalifikacije in kje prehitevanja?</a></h4>
-							<div class="news-block_two-text">Na določenih prizoriščih je kvalifikacijski krog skoraj enako pomemben kot celotna dirka, drugje pa prevladujejo taktika, drzne poteze in odlična strategija.</div>
-							<a class="news-block_two-more" href="/objave/prehitevanja-kvalifikacije">Preberi več <i class="flaticon-next-1"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		
-
-
-				<!-- Slide 2 -->
-				<div class="swiper-slide">
-				<!-- Objava 5 -->
-				<div class="news-block_two">
-					<div class="news-block_two-inner">
-						<div class="news-block_two-image">
-							<a href="/objave/novinci-uvodna-dirka"><img src="/assets/images/blog-card-img/novinci-uvodna-dirka.png" alt="" /></a>
-						</div>
-						<div class="news-block_two-content">
-							<div class="news-block_two-date">17<span>mar</span></div>
-							<ul class="news-block_two-meta">
-								<li>novosti</li>
-							</ul>
-							<h4 class="news-block_two-title"><a href="/objave/novinci-uvodna-dirka">Novinci na uvodni dirki sezone 2025</a></h4>
-							<div class="news-block_two-text">Sezona 2025 Formule 1 je prinesla novo generacijo dirkačev, ki so se na svoji prvi dirki v Melbournu soočili z izjemno težkimi pogoji.</div>
-							<a class="news-block_two-more" href="/objave/novinci-uvodna-dirka">Preberi več <i class="flaticon-next-1"></i></a>
-						</div>
-					</div>
-				</div>
-				</div>
-
-
-						
-
-
-							<!-- Slide 2 -->
-							<div class="swiper-slide">
-								<!-- News Block Two -->
-								<div class="news-block_two">
-									<div class="news-block_two-inner">
-										<div class="news-block_two-image">
-											<a href="/objave/nova-pravila-2025"><img src="/assets/images/blog-card-img/new-rules-25.png" alt="" /></a>
-										</div>
-										<div class="news-block_two-content">
-											<div class="news-block_two-date">13<span>mar</span></div>
-											<ul class="news-block_two-meta">
-												<li>novosti</li>
-											</ul>
-											<h4 class="news-block_two-title"><a href="/objave/nova-pravila-2025">Nova pravila v sezoni 2025</a></h4>
-											<div class="news-block_two-text">Sezona 2025 prinaša številne spremembe v pravilniku Formule 1, ki bodo vplivale tako na potek dirk kot na strategije ekip. Spremembe naj bi izboljšale varnost in konkurenčnosti v športu.</div>
-											<a class="news-block_two-more" href="/objave/nova-pravila-2025">Preberi več <i class="flaticon-next-1"></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Slide 3 -->
-							<div class="swiper-slide">
-								<!-- News Block Two -->
-								<div class="news-block_two">
-									<div class="news-block_two-inner">
-										<div class="news-block_two-image">
-											<a href="/objave/piastri-avstralija-adut"><img src="/assets/images/blog-card-img/piastri-australia.png" alt="" /></a>
-										</div>
-										<div class="news-block_two-content">
-											<div class="news-block_two-date">14<span>mar</span></div>
-											<ul class="news-block_two-meta">
-												<li>novosti</li>
-											</ul>
-											<h4 class="news-block_two-title"><a href="/objave/piastri-avstralija-adut">Oscar Piastri: Domači adut na VN Avstralije</a></h4>
-											<div class="news-block_two-text">Mladi avstralski talent bo prvič v svoji karieri na domači dirki nastopil kot eden glavnih kandidatov za zmago.</div>
-											<a class="news-block_two-more" href="/objave/piastri-avstralija-adut">Preberi več <i class="flaticon-next-1"></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							
-
-						
-						
-						
-					
-					</div>
-					
-					<!-- If we need pagination -->
-					<div class="three-items_slider-pagination"></div>
-					
-				</div>
-			</div>
-		</section>
-		<!-- End News Two -->
-
-
-
-
-		<!-- Contact One -->
-		<section class="contact-one style-two contact-bg">
-			<div class="auto-container">
-				<div class="row clearfix">
-					
-					<!-- Image Column -->
-					<div class="contact-one_form-column col-lg-7 col-md-12 col-sm-12">
-						<center><div style="text-align: left" class="sender-form-field" data-sender-form-id="m83fsa9jejrvpy5vd7r"></div></center>
-					</div>
-					
-					<!-- Map Column -->
-					<div class="contact-one_map-column col-lg-5 col-md-8 col-sm-8">
-						<div class="contact-one_map-outer">
-							<div class="map-box">
-								<img src="/assets/images/main-banner/banner_01.png" style="width: 90.5%;" alt="">
-							</div>
-						</div>
-					</div>
-				
-				</div>
-			</div>
-		</section>
-		<!-- End Contact One -->
-	
-	<?php include 'base-elements/footer.html'; ?>	
-
-</div>
-<!-- End PageWrapper -->
-
-<div class="progress-wrap">
-	<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-	</svg>
-</div>
-
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/appear.js"></script>
-<script src="assets/js/parallax.min.js"></script>
-<script src="assets/js/tilt.jquery.min.js"></script>
-<script src="assets/js/jquery.paroller.min.js"></script>
-<script src="assets/js/wow.js"></script>
-<script src="assets/js/swiper.min.js"></script>
-<script src="assets/js/backtotop.js"></script>
-<script src="assets/js/odometer.js"></script>
-<script src="assets/js/parallax-scroll.js"></script>
-
-<script src="assets/js/gsap.min.js"></script>
-<script src="assets/js/SplitText.min.js"></script>
-<script src="assets/js/ScrollTrigger.min.js"></script>
-<script src="assets/js/ScrollToPlugin.min.js"></script>
-<script src="assets/js/ScrollSmoother.min.js"></script>
-
-<script src="assets/js/magnific-popup.min.js"></script>
-<script src="assets/js/jquery.meanmenu.min.js"></script>
-<script src="assets/js/nav-tool.js"></script>
-<script src="assets/js/jquery-ui.js"></script>
-<script src="assets/js/jquery.marquee.min.js"></script>
-<script src="assets/js/jquery.countdown.js"></script>
-<script src="assets/js/element-in-view.js"></script>
-<script src="assets/js/script.js"></script>
-
-
-
+    <script src="js/main.js"></script>
 </body>
 </html>
